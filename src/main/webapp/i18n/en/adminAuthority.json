@@ -1,5 +1,5 @@
 {
-  "jhipsterSampleApplication2App": {
+  "myApp": {
     "adminAuthority": {
       "home": {
         "title": "Authorities",

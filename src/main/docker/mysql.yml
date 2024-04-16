@@ -1,14 +1,14 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
-name: jhipstersampleapplication2
+name: myapp
 services:
   mysql:
     image: mysql:8.3.0
     volumes:
       - ./config/mysql:/etc/mysql/conf.d
-    #   - ~/volumes/jhipster/jhipsterSampleApplication2/mysql/:/var/lib/mysql/
+    #   - ~/volumes/jhipster/myApp/mysql/:/var/lib/mysql/
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      - MYSQL_DATABASE=jhipstersampleapplication2
+      - MYSQL_DATABASE=myapp
     # If you want to expose these ports outside your dev PC,
     # remove the "127.0.0.1:" prefix
     ports:
