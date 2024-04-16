@@ -1,0 +1,26 @@
+
+application {
+  config {
+    baseName myApp
+    applicationType monolith
+    packageName com.myapp
+    authenticationType jwt
+    prodDatabaseType mysql
+    clientFramework angularX
+  }
+  entities *
+}
+
+entity Company {
+ id Long,
+ name String
+}
+
+entity Person {
+ id Long,
+ name String
+}
+
+relationship OneToMany {
+  Company to Person
+}

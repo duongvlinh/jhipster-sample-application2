@@ -3,8 +3,18 @@ import { Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'authority',
-    data: { pageTitle: 'jhipsterSampleApplication2App.adminAuthority.home.title' },
+    data: { pageTitle: 'myApp.adminAuthority.home.title' },
     loadChildren: () => import('./admin/authority/authority.routes'),
+  },
+  {
+    path: 'company',
+    data: { pageTitle: 'myApp.company.home.title' },
+    loadChildren: () => import('./company/company.routes'),
+  },
+  {
+    path: 'person',
+    data: { pageTitle: 'myApp.person.home.title' },
+    loadChildren: () => import('./person/person.routes'),
   },
   /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
 ];
